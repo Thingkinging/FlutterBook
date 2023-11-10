@@ -4,7 +4,7 @@ class BaseModel extends Model {
   int stackIndex = 0;
   List entityList = [];
   var entityBeingEdited;
-  String? choseDate;
+  String choseDate = '';
 
   void setChosenDate(String inDate){
     print("## BaseModel.setChosenDate(): inDate = $inDate");

@@ -5,14 +5,8 @@ import "package:scoped_model/scoped_model.dart";
 import "notes_db_worker.dart";
 import "notes_model.dart" show Note, NotesModel, notesModel;
 
-/// ****************************************************************************
-/// The Notes List sub-screen.
-/// ****************************************************************************
 class NotesList extends StatelessWidget {
-  /// The build() method.
-  ///
-  /// @param  inContext The BuildContext for this widget.
-  /// @return           A Widget.
+
   Widget build(BuildContext inContext) {
     print("## NotesList.build()");
 
@@ -98,13 +92,6 @@ class NotesList extends StatelessWidget {
         ); /* End ScopedModel. */
   }
 
-  /* End build(). */
-
-  /// Show a dialog requesting delete confirmation.
-  ///
-  /// @param  inContext The BuildContext of the parent Widget.
-  /// @param  inNote    The note (potentially) being deleted.
-  /// @return           Future.
   Future _deleteNote(BuildContext inContext, Note inNote) async {
     print("## NotestList._deleteNote(): inNote = $inNote");
 

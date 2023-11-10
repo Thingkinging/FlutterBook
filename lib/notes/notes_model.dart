@@ -4,7 +4,7 @@ class Note {
   int? id;
   String title = '';
   String content = '';
-  late String color;
+  String color = '';
 
   @override
   String toString() {
