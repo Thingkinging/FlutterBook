@@ -12,12 +12,9 @@ Future selectDate(BuildContext inContext, BaseModel inModel, String inDateString
 
   // Default to today's date, assuming we're adding.
   DateTime initialDate = DateTime.now();
-  print("######## $initialDate #########");
   // If editing, set the initialDate to the current birthday, if any.
   if (inDateString == null) {
-    print("######## $inDateString #########");
     List dateParts = inDateString.split("-");
-    print("######## $dateParts #########");
     // Create a DateTime using the year, month and day from dateParts.
     initialDate = DateTime(int.parse(dateParts[0]), int.parse(dateParts[1]), int.parse(dateParts[2]));
   }
